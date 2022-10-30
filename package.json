@@ -1,28 +1,21 @@
 {
-  "name": "glitch-hello-node",
-  "version": "0.1.0",
-  "description": "A simple Node app built on fastify, instantly up and running. Built to be remixed on Glitch.com.",
-  "main": "server.js",
+  "name": "Godzilla",
+  "version": "4.0.0",
+  "description": "Godzilla V14 Formlu Başvuru Bot Altyapısı!",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
+  "keywords": [],
+  "author": "Ly3ssia",
+  "license": "ISC",
   "dependencies": {
-    "fastify": "^4.4.0",
-    "handlebars": "^4.7.7",
-    "@fastify/formbody": "^7.0.1",
-    "@fastify/static": "^6.5.0",
-    "@fastify/view": "^7.1.0"
+    "@discordjs/builders": "^1.0.0",
+    "croxydb": "^0.0.7",
+    "discord.js": "^14.0.1",
+    "fs": "^0.0.1-security"
   },
   "engines": {
-    "node": "14.x"
-  },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-node"
-  },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+    "node": "16.x"
+  }
 }
