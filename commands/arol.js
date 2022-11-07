@@ -2,15 +2,15 @@ const {EmbedBuilder} = require("discord.js");
 const Discord = require("discord.js")
 const database = require("croxydb")
 exports.run = async (client, message, args) => {
-  if(!message.member.permissions.has(Discord.PermissionsBitField.Flags.Administrator)) return message.channel.send("yetkin yetmiyor")
+  if(!message.member.permissions.has(Discord.PermissionsBitField.Flags.Administrator)) return message.channel.send("Yetkin yetmiyor")
   
   let rol = message.mentions.roles.first()
   
-  if(!rol) return message.channel.send("rol etiketle")
+  if(!rol) return message.channel.send("Rol etiketle")
   
 
   database.set(`abone.${message.guild.id}`, rol.id)
-  message.channel.send("tm")
+  message.channel.send("Ayarlandı")
    
 }
 exports.conf = {

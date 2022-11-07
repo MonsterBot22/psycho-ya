@@ -7,13 +7,13 @@ let abonerol = await database.fetch(`abone.${message.guild.id}`)
 let users = message.mentions.users.first();
 
  
-  if(!abonerol) return message.channel.send("abone rol ayarlamamışın")
+  if(!abonerol) return message.channel.send("Abone rol ayarlamamışın")
   
   
-  if(!aboneyetkilisi) return message.channel.send("abone yetkilisi ayarlamamisin")
+  if(!aboneyetkilisi) return message.channel.send("Abone yetkilisi ayarlamamisin")
   let user = message.mentions.users.first()
-  if(!message.member.roles.cache.has(aboneyetkilisi)) return message.channel.send("abone yetkilisi rolün yok")
-  if(!message.mentions.users.first()) return message.channel.send("birini etiketle ")
+  if(!message.member.roles.cache.has(aboneyetkilisi)) return message.channel.send("Abone yetkilisi rolün yok")
+  if(!message.mentions.users.first()) return message.channel.send("Birini etiketle ")
   
  
   const buton = new Discord.ActionRowBuilder()
