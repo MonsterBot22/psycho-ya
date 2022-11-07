@@ -35,7 +35,7 @@ let users = message.mentions.users.first();
   .setStyle(Discord.ButtonStyle.Danger),
   )
   const em = new EmbedBuilder()
-  .setTitle("Rrfanx - Abone Rol Sistemi!")
+  .setTitle("PsychoPath - Abone Rol Sistemi!")
   .setDescription(`Abone Rolü Ver belirtilen kullanıcıya abone rolü verirsiniz.
   İşlemi İptal Etmek İçinde Geri Dön Butonuna Basın.
   
@@ -53,7 +53,7 @@ let users = message.mentions.users.first();
           .setColor("#f74d4d")
           if(interaction.user.id !== message.author.id) return interaction.reply({embeds: [embedd], ephemeral: true})
   const embed = new EmbedBuilder()
-  .setTitle(`Rrfanx - Abone Rol Sistemi!`)
+  .setTitle(`PsychoPath - Abone Rol Sistemi!`)
 .setDescription(`${user} Kullanıcısına Abone Rolü Başarıyla Verildi!`)
    .setColor(`#f74d4d`)
 
@@ -70,7 +70,7 @@ let users = message.mentions.users.first();
       .setColor(`#f74d4d`)
           if(interaction.user.id !== message.author.id) return interaction.reply({embeds: [embedd], ephemeral: true})
             const embed = new EmbedBuilder()
-.setTitle("Rrfanx - Abone Rol Sistemi!")
+.setTitle("PsychoPath - Abone Rol Sistemi!")
 .setDescription(`${user} Kullanıcısından Abone Rolü Başarıyla Alındı!`)
  .setColor(`#f74d4d`)
 msg.edit({embeds: [embed], components: []})
@@ -84,7 +84,7 @@ message.guild.members.cache.get(users.id).roles.remove(abonerol)
          .setColor(`#f74d4d`)
           if(interaction.user.id !== message.author.id) return interaction.reply({embeds: [embedd], ephemeral: true})
           const embed = new EmbedBuilder()
-            .setTitle("Rrfanx - Abone Rol Sistemi!")
+            .setTitle("PsychoPath - Abone Rol Sistemi!")
             .setDescription(`İşlem Başarıyla İptal Edildi`)
            .setColor(`#f74d4d`)
             msg.edit({embeds: [embed], components: []})
